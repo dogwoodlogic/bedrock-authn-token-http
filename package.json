@@ -24,8 +24,8 @@
     "express-async-handler": "^1.1.3"
   },
   "peerDependencies": {
-    "bedrock": "^1.0.0",
-    "bedrock-account": "digitalbazaar/bedrock-account#implementation",
+    "bedrock": "^1.12.1",
+    "bedrock-account": "^1.0.0",
     "bedrock-authn-token": "digitalbazaar/bedrock-authn-token#implementation",
     "bedrock-express": "^2.0.8",
     "bedrock-passport": "^3.4.2",

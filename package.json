@@ -29,7 +29,7 @@
     "bedrock-account": "^1.0.0",
     "bedrock-authn-token": "digitalbazaar/bedrock-authn-token#implementation",
     "bedrock-express": "^2.0.8",
-    "bedrock-passport": "^3.4.2",
+    "bedrock-passport": "^4.0.2",
     "bedrock-validation": "^2.4.0"
   },
   "directories": {

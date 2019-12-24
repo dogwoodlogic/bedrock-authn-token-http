@@ -27,7 +27,7 @@
   "peerDependencies": {
     "bedrock": "1.12.1 - 3.x",
     "bedrock-account": "^2.0.0",
-    "bedrock-authn-token": "digitalbazaar/bedrock-authn-token#implementation",
+    "bedrock-authn-token": "^1.0.0",
     "bedrock-express": "2.0.8 - 3.x",
     "bedrock-passport": "4.0.2 - 5.x",
     "bedrock-validation": "^4.0.0"

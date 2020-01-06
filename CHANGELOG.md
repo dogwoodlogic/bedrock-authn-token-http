@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 1.1.0 - 2020-01-xx
+## 1.1.0 - 2020-01-06
 
 ### Added
 - Add option to include `clientId` for `nonce` and `challenge` tokens.

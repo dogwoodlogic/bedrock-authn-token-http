@@ -3,7 +3,9 @@
   "version": "1.2.1-0",
   "description": "HTTP API for bedrock-authn-token",
   "main": "./lib",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint lib test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/digitalbazaar/bedrock-authn-token-http"

@@ -1,5 +1,10 @@
 # bedrock-authn-token-http ChangeLog
 
+## 1.2.1 - 2020-06-17
+
+### Changed
+- Update peer and test dependencies related to MongoDB upgrade.
+
 ## 1.2.0 - 2020-03-04
 
 ### Added

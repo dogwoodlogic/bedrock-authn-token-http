@@ -1,5 +1,12 @@
 # bedrock-authn-token-http ChangeLog
 
+## 1.3.0 - 2020-06-30
+
+### Changed
+- Update peerDependencies to include bedrock-account@4.
+- Update test deps.
+- Update CI workflow.
+
 ## 1.2.1 - 2020-06-17
 
 ### Changed

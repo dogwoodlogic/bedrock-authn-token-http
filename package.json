@@ -4,7 +4,7 @@
   "description": "HTTP API for bedrock-authn-token",
   "main": "./lib",
   "scripts": {
-    "lint": "eslint lib test"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",

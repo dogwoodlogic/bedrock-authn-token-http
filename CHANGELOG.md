@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 1.4.0 - 2021-01-TBD
+## 1.4.0 - 2021-01-13
 
 ### Added
 - Setup a cookie and bake clientID into it.

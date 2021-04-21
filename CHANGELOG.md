@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 1.4.2 - 2021-04-TBD
+## 1.4.2 - 2021-04-21
 
 ### Fixed
 - Get `typeOptions` param from request body for type nonce.

@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 2.0.0 - TBD
+## 2.0.0 - 2021-05-04
 
 ### Added
 - **BREAKING**: Added `clientId` generation and `brAuthnToken.clients.set` to

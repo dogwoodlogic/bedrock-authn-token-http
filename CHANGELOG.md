@@ -1,5 +1,10 @@
 # bedrock-authn-token-http ChangeLog
 
+## 4.0.1 - 2022-03-12
+
+### Fixed
+- Add optional `serviceId` to post token validator.
+
 ## 4.0.0 - 2022-03-12
 
 ### Added

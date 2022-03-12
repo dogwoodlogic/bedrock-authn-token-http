@@ -30,6 +30,9 @@ const postToken = {
         type: 'string'
       }
     },
+    serviceId: {
+      type: 'string'
+    },
     typeOptions: {
       type: 'object',
       properties: {

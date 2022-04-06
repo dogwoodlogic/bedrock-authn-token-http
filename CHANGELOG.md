@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 5.0.0 - 2022-04-xx
+## 5.0.0 - 2022-04-06
 
 ### Changed
 - **BREAKING**: Rename package to `@bedrock/authn-token-http`.

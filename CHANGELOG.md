@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 7.0.1 - 2022-05-xx
+## 7.0.1 - 2022-05-21
 
 ### Fixed
 - Use `bnid@3` to reduce dependencies.

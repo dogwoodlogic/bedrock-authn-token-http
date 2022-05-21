@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 7.0.0 - 2022-05-xx
+## 7.0.0 - 2022-05-21
 
 ### Added
 - Add `/authn/tokens/<token-type>/hash-parameters` route that reports all hash

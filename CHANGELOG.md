@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 7.0.2 - 2022-05-xx
+## 7.0.2 - 2022-05-26
 
 ### Fixed
 - Ensure client ID cookie is set to secure.

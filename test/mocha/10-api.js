@@ -116,7 +116,7 @@ describe('api', () => {
       res.data.should.be.an('object');
       res.data.should.have.keys([
         'algorithm', 'digits', 'id', 'step', 'type', 'secret', 'label',
-        'otpAuthUrl'
+        'otpAuthUrl', 'accountname', 'period'
       ]);
       res.data.type.should.equal('totp');
     });
@@ -540,7 +540,7 @@ describe('api', () => {
             json: {
               account: accountId,
               type,
-              challenge: 'incorrect-challenge',
+              challenge: 'incorrect',
             }
           });
         } catch(e) {

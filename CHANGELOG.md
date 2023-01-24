@@ -1,6 +1,6 @@
 # bedrock-authn-token-http ChangeLog
 
-## 8.0.0 - 2023-01-dd
+## 8.0.0 - 2023-01-24
 
 ### Changed
 - **BREAKING**: Update peer deps:

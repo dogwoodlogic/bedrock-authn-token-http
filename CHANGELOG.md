@@ -5,7 +5,7 @@
 ### Changed
 - **BREAKING**: Update peer deps:
   - `@bedrock/account@9`
-  - `@bedrock/authn-token@10`
+  - `@bedrock/authn-token@11`
   - `@bedrock/passport@11`.
   - This changes include database layout and record format changes that are
     incompatible with previous releases.

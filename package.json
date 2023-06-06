@@ -40,7 +40,8 @@
     "eslint": "^8.32.0",
     "eslint-config-digitalbazaar": "^4.2.0",
     "eslint-plugin-jsdoc": "^39.6.8",
-    "jsdoc-to-markdown": "^8.0.0"
+    "jsdoc-to-markdown": "^8.0.0",
+    "pretty-hrtime": "^1.0.3"
   },
   "directories": {
     "lib": "./lib"

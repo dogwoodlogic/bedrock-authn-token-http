@@ -301,6 +301,59 @@ describe('api', () => {
         err.message.should.equal('Authentication token not found.');
         err.status.should.equal(404);
       });
+    it.only('calculate hash-parameter endpoint latency', async function() {
+      const type = 'password';
+      const accountId = accounts['alpha@example.com'].account.id;
+      const password = 'some-password';
+      const {hash} = await brAuthnToken._pbkdf2.pbkdf2({
+        secret: password
+      });
+      stubPassportStub('alpha@example.com');
+      let err;
+      let res;
+      try {
+        res = await httpClient.post(`${baseURL}/${type}`, {
+          agent, json: {
+            account: accountId,
+            hash,
+            requiredAuthenticationMethods: ['login-email-challenge'],
+            authenticationMethod: 'login-email-challenge'
+          }
+        });
+      } catch(e) {
+        err = e;
+      }
+      assertNoError(err);
+      should.exist(res);
+      res.status.should.equal(204);
+      should.not.exist(res.data);
+
+      // get the latency for the password token
+      res = await Promise.all(Array.from({length: 5}, () => {
+        return httpClient.get(
+          `${baseURL}/${type}/hash-parameters?email=alpha@example.com`, {
+            agent
+          });
+      }));
+      let avgLatency;
+      avgLatency = res.reduce((sum, cur) => {
+        const latency = cur.data.latency.split(' ')[0];
+        return sum + Number(latency);
+      }, 0) / res.length;
+      console.log(`Average latency for valid username: ${avgLatency} ms`);
+
+      res = await Promise.all(Array.from({length: 5}, () => {
+        return httpClient.get(
+          `${baseURL}/${type}/hash-parameters?email=beta@example.com`, {
+            agent
+          });
+      }));
+      avgLatency = res.reduce((sum, cur) => {
+        const latency = cur.data.latency.split(' ')[0];
+        return sum + Number(latency / 1000);
+      }, 0) / res.length;
+      console.log(`Average latency for invalid username: ${avgLatency} ms`);
+    });
   });
   describe('delete /', () => {
     before(async function setup() {

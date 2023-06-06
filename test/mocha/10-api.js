@@ -350,7 +350,7 @@ describe('api', () => {
       }));
       avgLatency = res.reduce((sum, cur) => {
         const latency = cur.data.latency.split(' ')[0];
-        return sum + Number(latency / 1000);
+        return sum + Number(latency);
       }, 0) / res.length;
       console.log(`Average latency for invalid username: ${avgLatency} ms`);
     });
